@@ -1,0 +1,49 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 364px;
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.08) 0 4px 24px 0px;
+  }
+
+  &__heart-icon {
+    @apply absolute grid place-content-center top-4 right-4 w-8 h-8 rounded-full bg-white hover:bg-black hover:text-white;
+  }
+
+  &__image {
+    height: 200px;
+    img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding: 20px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    color: #717171;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  &__footer {
+    padding: 20px;
+    margin-top: auto;
+  }
+}

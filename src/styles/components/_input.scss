@@ -1,0 +1,49 @@
+@import "./variables";
+
+@mixin form-control {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding-left: 16px;
+  overflow: hidden;
+}
+
+@mixin form-input {
+  width: 100%;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background: transparent;
+  padding-block: 12px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.select-control {
+  @include form-control;
+  width: 280px;
+  background-color: $gray;
+
+  select {
+    @include form-input;
+  }
+
+  svg {
+    margin-right: 8px;
+  }
+}
+
+.date-control {
+  @include form-control;
+
+  svg {
+    margin-right: 8px;
+  }
+
+  input {
+    @include form-input;
+    max-width: 110px;
+  }
+}

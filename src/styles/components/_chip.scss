@@ -1,0 +1,7 @@
+.chip {
+  @apply leading-loose rounded-full text-sm font-light min-w-fit w-12 border px-2;
+
+  &.selected {
+    @apply bg-black text-white;
+  }
+}

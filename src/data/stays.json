@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Whitefish Estate",
+    "subtitle": "Whitefish, Montana, United States",
+    "hour": "night",
+    "price": "$10,000",
+    "image": "https://framerusercontent.com/images/TQv9Req7ZME40dmudtRtkwz9lcQ.webp",
+    "rating": "5.0"
+  },
+  {
+    "id": 2,
+    "name": "Luxury stay in Weston, Saint James, Barbados",
+    "subtitle": "Weston, Saint James, Barbados",
+    "hour": "night",
+    "price": "$1,500",
+    "image": "https://framerusercontent.com/images/afIWyPD7bAqXpOTuGYeO4FzrnU.webp",
+    "rating": "5.00"
+  },
+  {
+    "id": 3,
+    "name": "Numero 22 - Lake Como - Design Living & Lake View",
+    "subtitle": "Laglio, Lombardia, Italy",
+    "hour": "night",
+    "price": "$359",
+    "image": "https://framerusercontent.com/images/wTSsHOfD0gXYkODZBWWWOfdkw.webp",
+    "rating": "4.99"
+  },
+  {
+    "id": 4,
+    "name": "7,500 sq ft Private Beachfront Estate",
+    "subtitle": "Dubai, United Arab Emirates",
+    "hour": "night",
+    "price": "$2,478",
+    "image": "https://framerusercontent.com/images/3E8SIyOR9oYK20P1hy1BtAelgI.webp",
+    "rating": "4.73"
+  },
+  {
+    "id": 5,
+    "name": "Bohemian & Spacious / Private Pool and Garden",
+    "subtitle": "Tulum, Quintana Roo, Mexico",
+    "hour": "night",
+    "price": "$199",
+    "image": "https://framerusercontent.com/images/0RUEx3es60Z3CuB1eFkBxcPxmA.webp",
+    "rating": "4.97"
+  },
+  {
+    "id": 6,
+    "name": "Designer A-Frame Cabin in the Trees",
+    "subtitle": "Lake Arrowhead, California, United States",
+    "hour": "night",
+    "price": "$225",
+    "image": "https://framerusercontent.com/images/3fX1fjZlrzbcXKbTqPD7FpY4Z8.webp",
+    "rating": "4.93"
+  },
+  {
+    "id": 7,
+    "name": "Fully Renovated 2 BR on River w/ Pool - Walk to To",
+    "subtitle": "Aspen, Colorado, United States",
+    "hour": "night",
+    "price": "$546",
+    "image": "https://framerusercontent.com/images/lIXcszNPyY7PC0yaVFg5TBtmfA.webp",
+    "rating": "5.00"
+  },
+  {
+    "id": 8,
+    "name": "Magnolia's Hillcrest Cottage",
+    "subtitle": "Waco, Texas, United States",
+    "hour": "night",
+    "price": "$500",
+    "image": "https://framerusercontent.com/images/ZEBw6ci9AF1cD4D1sFdPW3Mj5rE.webp",
+    "rating": "4.97"
+  },
+  {
+    "id": 9,
+    "name": "Unique Architecture Cave House by Cycladica",
+    "subtitle": "Oia, South Aegean, Greece",
+    "hour": "night",
+    "price": "$930",
+    "image": "https://framerusercontent.com/images/WO8ADTYBrqd6BunOnEocxOAS7c.webp",
+    "rating": "4.95"
+  },
+  {
+    "id": 10,
+    "name": "ATELIER ArtVillas Costa Rica",
+    "subtitle": "Uvita, Osa, Puntaneras, Costa Rica",
+    "hour": "night",
+    "price": "$830",
+    "image": "https://framerusercontent.com/images/XKmxgbyaDgBCY0OI7iczwdFvcU.webp",
+    "rating": "4.80"
+  },
+  {
+    "id": 11,
+    "name": "Mountainside Luxury Cabin with Batulao View",
+    "subtitle": "Calaca, Calabarzon, Philippines",
+    "hour": "night",
+    "price": "$483",
+    "image": "https://framerusercontent.com/images/cD0vsVdMfYV5dXwD5abiySgong.webp",
+    "rating": "4.87"
+  }
+]

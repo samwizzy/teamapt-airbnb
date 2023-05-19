@@ -1,0 +1,84 @@
+@import "./variables";
+
+// filter form dialog
+.dialog {
+  width: 400px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 1px solid $border-color;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 4px 24px 0px;
+  transition: all 200ms;
+  transform: translateX(100%);
+
+  &__content {
+    overflow-y: auto;
+    height: 100vh;
+    padding: 152px 24px 120px; // offset top: 144px + 8px
+  }
+
+  &__footer {
+    padding: 24px;
+    position: absolute;
+    @apply bg-white border-t bottom-0 left-0 w-full;
+
+    p {
+      background-color: #efb2bb;
+      padding: 8px;
+      border-radius: 8px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+
+// stay details dialog
+.overlay {
+  @apply w-screen h-screen fixed z-20 inset-0;
+  transition: all 200ms;
+  transform: translateX(100%);
+  background-color: $backdrop-color;
+}
+
+.dialog__lg {
+  width: 1440px;
+  max-width: 75%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 1px solid $border-color;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 4px 24px 0px;
+
+  &__content {
+    height: 100vh;
+    padding: 24px;
+    overflow-y: auto;
+    border: 1px solid transparent;
+  }
+
+  &__image {
+    pointer-events: none;
+    user-select: none;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @apply border rounded-2xl;
+  }
+
+  &__close-icon {
+    @apply absolute grid place-content-center w-8 h-8 rounded-full bg-white z-10 cursor-pointer -left-12 top-4 hover:bg-black hover:text-white;
+  }
+
+  &__action-icon {
+    @apply grid place-content-center border w-10 h-10 rounded-full bg-gray-150;
+  }
+}
+
+.open {
+  transform: translateX(0);
+}
