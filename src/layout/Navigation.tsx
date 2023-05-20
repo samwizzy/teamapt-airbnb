@@ -24,7 +24,7 @@ function Navigation() {
           </li>
         </ul>
 
-        <div className="w-12 h-12 rounded-full border overflow-hidden">
+        <div className="w-10 h-10 rounded-full border overflow-hidden">
           <img src="https://i.pravatar.cc/300" alt="avatar" />
         </div>
       </div>

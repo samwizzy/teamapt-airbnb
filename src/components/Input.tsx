@@ -1,4 +1,4 @@
-import { HiOutlineChevronDown } from "react-icons/hi";
+// import { HiOutlineChevronDown } from "react-icons/hi";
 import { FiCalendar } from "react-icons/fi";
 import { useState } from "react";
 
@@ -8,16 +8,16 @@ export function SelectInput() {
       <select name="place" id="place">
         <option value="Anywhere">Anywhere</option>
       </select>
-      <HiOutlineChevronDown />
+      {/* <HiOutlineChevronDown /> */}
     </div>
   );
 }
 
-export function DateInput({ id, placeholder, className }: { id: string; placeholder: string; className?: string }) {
+export function DateInput({ id, value, className }: { id: string; value: string; className?: string }) {
   return (
     <div className={`date-control ${className ? className : "bg-white"}`}>
       <FiCalendar size="20" color="#717171" />
-      <input type="text" name="duration" id={id} placeholder={placeholder} />
+      <input type="text" name="duration" id={id} defaultValue={value} />
     </div>
   );
 }
@@ -33,7 +33,7 @@ export function NumberInput({ value, label }: { value: number; label: string }) 
       <button type="button" onClick={decrement}>
         -
       </button>
-      <span className="text-gray-600">
+      <span className="text-gray-800 text-sm whitespace-nowrap">
         {num} {label}
       </span>
       <button type="button" onClick={increment}>
