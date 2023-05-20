@@ -46,14 +46,11 @@ function StayDetailsDialog() {
 
         <div className="dialog__lg__content">
           <div className="flex gap-4 mb-8">
-            <div
-              className="w-[60%] h-[480px] col-span-7 row-span-2 dialog__lg__image"
-              style={{ backgroundImage: `url(${src1})` }}
-            />
+            <div className="w-[60%] h-[480px] dialog__lg__image" style={{ backgroundImage: `url(${src1})` }} />
 
             <div className="flex flex-1 flex-col gap-4 flex-nowrap">
-              <div className="col-span-5 h-full w-full dialog__lg__image" style={{ backgroundImage: `url(${src2})` }} />
-              <div className="col-span-5 h-full w-full dialog__lg__image" style={{ backgroundImage: `url(${src3})` }} />
+              <div className="h-full w-full dialog__lg__image" style={{ backgroundImage: `url(${src2})` }} />
+              <div className="h-full w-full dialog__lg__image" style={{ backgroundImage: `url(${src3})` }} />
             </div>
           </div>
 
@@ -67,10 +64,8 @@ function StayDetailsDialog() {
               <header className="flex justify-between">
                 <div>
                   <div className="mb-6">
-                    <h1 className="font-medium text-3xl leading-snug mb-3">
-                      Luxury stay in Weston, Saint James, Barbados
-                    </h1>
-                    <span className="text-base text-gray-500">Weston, Saint James, Barbados</span>
+                    <h1 className="font-medium text-3xl leading-snug mb-3">{state.data?.name}</h1>
+                    <span className="text-base text-gray-500">{state.data?.subtitle}</span>
                   </div>
 
                   <div className="flex items-center gap-x-8 text-sm text-gray-600">
@@ -418,12 +413,12 @@ function StayDetailsDialog() {
                 <div className="rounded-2xl p-6 bg-[#F5F5F4] mb-4">
                   <div className="flex justify-between items-center mb-6">
                     <div className="flex items-center space-x-2">
-                      <span className="text-2xl font-semibold">$483</span>
+                      <span className="text-2xl font-semibold">{state.data?.price}</span>
                       <span>/</span>
                       <span className="text-sm text-gray-500">night</span>
                     </div>
                     <span className="inline-flex text-sm text-gray-500">
-                      <HiStar size={20} color="#000" /> &nbsp;5.00
+                      <HiStar size={20} color="#000" /> &nbsp;{state.data?.rating}
                     </span>
                   </div>
 
@@ -440,7 +435,7 @@ function StayDetailsDialog() {
                           <label className="text-xs text-gray-500" htmlFor="check-out">
                             Check Out
                           </label>
-                          <DateInput id="check-out" placeholder="6/14/2023" className="bg-white" />
+                          <DateInput id="check-out" placeholder="6/21/2023" className="bg-white" />
                         </div>
                       </div>
 

@@ -11,10 +11,10 @@ type CardProps = {
 function Card({ item }: CardProps) {
   const { dispatch } = useContext(StayContext);
 
-  const handleOpen = () => dispatch({ type: "OPEN", payload: {} });
+  const handleOpen = (item: Stay) => dispatch({ type: "OPEN", payload: item });
 
   return (
-    <article className="card" onClick={handleOpen}>
+    <article className="card" onClick={() => handleOpen(item)}>
       <button className="card__heart-icon">
         <FiHeart size={16} />
       </button>

@@ -1,10 +1,11 @@
 import { Dispatch, ReactNode, Reducer, createContext, useReducer } from "react";
+import { Stay } from "../data/Stay";
 
-type ActionType = { type: "OPEN"; payload: Record<string, string> } | { type: "CLOSE" };
+type ActionType = { type: "OPEN"; payload: Stay } | { type: "CLOSE" };
 
 type InitialState = {
   open: boolean;
-  data: Record<string, string> | null;
+  data: Stay | null;
 };
 
 const initialState: InitialState = {
