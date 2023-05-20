@@ -59,9 +59,9 @@ function StayDetailsDialog() {
 
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-8">
-              <div className="w-fit flex items-center space-x-2 rounded-xl mb-3 px-4 py-2 border">
+              <div className="w-fit flex items-center space-x-2 rounded-xl mb-3 px-3 py-2 border">
                 <SiWegame size={20} color="#c73160" />
-                <span>Superhost</span>
+                <span className="text-sm">Superhost</span>
               </div>
 
               <header className="flex justify-between">
