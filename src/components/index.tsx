@@ -1,6 +1,7 @@
 import Divider from "./Divider";
 import { SelectInput, DateInput, NumberInput } from "./Input";
 import ButtonGroup from "./ButtonGroup";
+import RadioGroup from "./RadioGroup";
 import Card from "./Card";
 import Progress from "./Progress";
 import FilterFormDialog from "./FilterFormDialog";
@@ -14,6 +15,7 @@ export {
   FilterFormDialog,
   NumberInput,
   Progress,
+  RadioGroup,
   SelectInput,
   StayDetailsDialog,
 };

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef } from "react";
-import { DateInput, FilterFormDialog, NumberInput, SelectInput } from "../components";
-import { FiMap, FiFilter, FiGrid } from "react-icons/fi";
+import { DateInput, FilterFormDialog, NumberInput, RadioGroup, SelectInput } from "../components";
+import { FiFilter } from "react-icons/fi";
 import { FilterContext } from "../context/filterContext";
 
 function BottomNavigation() {
@@ -25,21 +25,14 @@ function BottomNavigation() {
 
   return (
     <section role="search" className="h-18 sticky z-10 bg-white top-0 border-b px-8 py-3">
-      <div className="flex justify-between">
-        <div className="grid grid-cols-2 bg-gray-200 rounded-lg">
-          <button className="w-12 h-12 grid place-content-center bg-black rounded-lg">
-            <FiGrid color="#fff" size="20" />
-          </button>
-          <button className="bg-gray-150 rounded-r-lg p-3">
-            <FiMap size="20" color="#1111116f" />
-          </button>
-        </div>
+      <div className="flex justify-between items-center">
+        <RadioGroup />
 
         <fieldset>
           <form className="flex items-center gap-x-3">
             <SelectInput />
             <DateInput id="duration" placeholder="June 14 - 21" className="bg-gray-150" />
-            <NumberInput value="4 guests" />
+            <NumberInput value={0} label="guests" />
           </form>
         </fieldset>
 

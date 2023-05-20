@@ -47,3 +47,39 @@
     max-width: 110px;
   }
 }
+
+.number-control {
+  @apply flex items-center gap-x-2 p-2 bg-gray-150 rounded-lg;
+  button {
+    @apply grid place-content-center w-8 h-8 p-2 text-lg rounded-lg bg-white text-primary;
+  }
+}
+
+.radio-group {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  border: 1px solid $gray;
+  overflow: hidden;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    color: #1111116f;
+    cursor: pointer;
+  }
+
+  input[type="radio"]:checked + label {
+    background-color: #000;
+    color: #fff;
+  }
+}

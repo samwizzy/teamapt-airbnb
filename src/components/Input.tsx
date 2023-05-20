@@ -1,5 +1,6 @@
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { FiCalendar } from "react-icons/fi";
+import { useState } from "react";
 
 export function SelectInput() {
   return (
@@ -21,14 +22,21 @@ export function DateInput({ id, placeholder, className }: { id: string; placehol
   );
 }
 
-export function NumberInput({ value }: { value: string }) {
+export function NumberInput({ value, label }: { value: number; label: string }) {
+  const [num, setNum] = useState<number>(value);
+
+  const increment = () => setNum((prevNum) => prevNum + 1);
+  const decrement = () => num > 0 && setNum((prevNum) => prevNum - 1);
+
   return (
-    <div className="flex items-center gap-x-2 p-2 bg-gray-150 rounded-lg">
-      <button type="button" className="grid place-content-center w-8 h-8 p-2 text-lg rounded-lg bg-white text-primary">
+    <div className="number-control">
+      <button type="button" onClick={decrement}>
         -
       </button>
-      <span className="text-gray-600">{value}</span>
-      <button type="button" className="grid place-content-center w-8 h-8 p-2 text-lg rounded-lg bg-white text-primary">
+      <span className="text-gray-600">
+        {num} {label}
+      </span>
+      <button type="button" onClick={increment}>
         +
       </button>
     </div>
