@@ -2,7 +2,7 @@ import logo from "/airbnb.svg";
 
 function Navigation() {
   return (
-    <nav className="h-18 relative z-20 bg-white border-b">
+    <nav className="h-18 relative z-20 bg-white border-b" aria-label="primary">
       <div className="px-8 flex items-center justify-between">
         <img className="h-8 w-auto" src={logo} alt="logo" />
 

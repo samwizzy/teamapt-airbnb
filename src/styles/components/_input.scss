@@ -65,8 +65,8 @@
 }
 
 .number-control {
-  width: 170px;
-  @apply flex items-center gap-x-3 p-2 bg-gray-150 rounded-xl;
+  min-width: 170px;
+  @apply flex items-center justify-between gap-x-3 p-2 bg-gray-150 rounded-xl;
 
   button {
     @apply grid place-content-center w-8 h-8 shrink-0 text-lg rounded-lg bg-white text-primary;

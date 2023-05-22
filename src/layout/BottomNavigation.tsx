@@ -24,7 +24,7 @@ function BottomNavigation() {
   }, [dispatch]);
 
   return (
-    <section role="search" className="h-18 sticky z-10 bg-white top-0 border-b px-8 py-3">
+    <div role="search" className="h-18 sticky z-10 bg-white top-0 border-b px-8 py-3">
       <div className="flex justify-between items-center">
         <RadioGroup />
 
@@ -44,7 +44,7 @@ function BottomNavigation() {
           <FilterFormDialog />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
