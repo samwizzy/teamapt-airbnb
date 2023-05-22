@@ -429,13 +429,13 @@ function StayDetailsDialog() {
                           <label className="text-xs text-gray-500" htmlFor="check-in">
                             Check In
                           </label>
-                          <DateInput id="check-in" value="6/14/2023" className="bg-white" />
+                          <DateInput id="check-in" value="6/14/2023" color="#fff" />
                         </div>
                         <div>
                           <label className="text-xs text-gray-500" htmlFor="check-out">
                             Check Out
                           </label>
-                          <DateInput id="check-out" value="6/21/2023" className="bg-white" />
+                          <DateInput id="check-out" value="6/21/2023" color="#fff" />
                         </div>
                       </div>
 

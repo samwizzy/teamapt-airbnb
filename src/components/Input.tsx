@@ -1,6 +1,6 @@
+import { useState } from "react";
 import { HiOutlinePlus, HiOutlineMinus } from "react-icons/hi";
 import { FiCalendar } from "react-icons/fi";
-import { useState } from "react";
 
 export function SelectInput() {
   return (
@@ -12,9 +12,9 @@ export function SelectInput() {
   );
 }
 
-export function DateInput({ id, value, className }: { id: string; value: string; className?: string }) {
+export function DateInput({ id, value, color }: { id: string; value: string; color?: string }) {
   return (
-    <div className={`date-control ${className ? className : "bg-white"}`}>
+    <div className="date-control" style={{ backgroundColor: color }}>
       <FiCalendar size="20" color="#717171" />
       <input type="text" name="duration" id={id} defaultValue={value} />
     </div>

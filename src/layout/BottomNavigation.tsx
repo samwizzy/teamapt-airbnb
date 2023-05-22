@@ -31,7 +31,7 @@ function BottomNavigation() {
         <fieldset>
           <form className="flex items-center gap-x-3">
             <SelectInput />
-            <DateInput id="duration" value="June 14 - 21" className="bg-gray-150" />
+            <DateInput id="duration" value="June 14 - 21" />
             <NumberInput value={0} label="guests" />
           </form>
         </fieldset>
