@@ -1,4 +1,4 @@
-// import { HiOutlineChevronDown } from "react-icons/hi";
+import { HiOutlinePlus, HiOutlineMinus } from "react-icons/hi";
 import { FiCalendar } from "react-icons/fi";
 import { useState } from "react";
 
@@ -8,7 +8,6 @@ export function SelectInput() {
       <select name="place" id="place">
         <option value="Anywhere">Anywhere</option>
       </select>
-      {/* <HiOutlineChevronDown /> */}
     </div>
   );
 }
@@ -31,13 +30,13 @@ export function NumberInput({ value, label }: { value: number; label: string }) 
   return (
     <div className="number-control">
       <button type="button" onClick={decrement}>
-        -
+        <HiOutlineMinus />
       </button>
       <span className="text-gray-800 text-sm whitespace-nowrap">
         {num} {label}
       </span>
       <button type="button" onClick={increment}>
-        +
+        <HiOutlinePlus />
       </button>
     </div>
   );
