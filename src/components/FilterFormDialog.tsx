@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
 import clsx from "clsx";
 import { FilterContext } from "../context/filterContext";
@@ -7,10 +7,29 @@ import { Divider } from ".";
 const rooms = ["Any", 1, 2, 3, 4, 5];
 
 function FilterFormDialog() {
+  const modalRef = useRef<HTMLDivElement | null>(null);
   const { state } = useContext(FilterContext);
+  const { dispatch } = useContext(FilterContext);
+
+  useEffect(() => {
+    const el = document.getElementById("modal-root");
+
+    const handleClickAway = (e: MouseEvent) => {
+      const ariaLabel = (e.target as HTMLButtonElement).ariaLabel;
+      if (el && !el?.contains(e.target as Node) && ariaLabel !== "open") {
+        dispatch({ type: "CLOSE" });
+      }
+    };
+
+    document.addEventListener("click", handleClickAway);
+
+    return () => {
+      document.removeEventListener("click", handleClickAway);
+    };
+  }, [dispatch]);
 
   return ReactDOM.createPortal(
-    <div role="dialog" className={clsx("dialog", { open: state.open })}>
+    <div role="dialog" className={clsx("dialog", { open: state.open })} ref={modalRef}>
       <div className="dialog__content">
         <div className="flex justify-between py-3 mb-6 border-b">
           <h1 className="font-semibold text-lg mb-2">Filters</h1>

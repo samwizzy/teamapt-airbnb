@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import AppBar from "./AppBar";
 import SideBarMenu from "./SideBarMenu";
-import StayDetailsDialog from "../components/StayDetailsDialog";
+import { FilterFormDialog, StayDetailsDialog } from "../components";
 
 function Layout() {
   return (
@@ -16,6 +16,7 @@ function Layout() {
         </main>
       </div>
 
+      <FilterFormDialog />
       <StayDetailsDialog />
     </div>
   );
